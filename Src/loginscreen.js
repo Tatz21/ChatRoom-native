@@ -20,6 +20,14 @@ export default class loginscreen extends React.Component{
                       style={{width:240,height:200,marginLeft:0, alignSelf:"stretch"}}
                       />
                       </View>
+                      <View style={{marginHorizontal:32}}>
+                          <Text style={styles.header}>Username</Text>
+                          <TextInput style={styles.input} placeholder='Techsalicious' onChangeText={name => {this.setState({name});
+                          
+                        }}
+                         value={this.state.name} 
+                          />
+                     </View>
                     </View>
 
         );
@@ -39,5 +47,21 @@ const styles= StyleSheet.create({
         position:"absolute",
         left:-120,
         top:-20
+    },
+    header:{
+        fontWeight:"800",
+        fontSize:30,
+        color:"#514E5A",
+        marginTop:32
+    },
+    input:{
+        marginTop:32,
+        height:50,
+        borderWidth:StyleSheet.hairlineWidth,
+        borderColor:"#BAB7C3",
+        borderRadius:30,
+        paddingHorizontal:16,
+        color:"#514E5A",
+        fontWeight:"600"
     }
 });
