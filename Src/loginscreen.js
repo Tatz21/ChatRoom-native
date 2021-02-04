@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text,StyleSheet,TextInput,TouchableOpacity, Image } from 'react-native';
+import{Ionicons} from '@expo/vector-icons'
 
 export default class loginscreen extends React.Component{
     state= {
@@ -26,6 +27,11 @@ export default class loginscreen extends React.Component{
                         }}
                          value={this.state.name} 
                           />
+                          <View style={{alignItems:"flex-end",marginTop:"64" }}>
+                          <TouchableOpacity style={styles.continue} onPress={this.continue}>
+                              <Ionicons name="md-arrow-round-forward" size={24} color='#FFF' />
+                              </TouchableOpacity>    
+                          </View>
                      </View>
                     </View>
 
