@@ -51,17 +51,17 @@ const styles= StyleSheet.create({
     header:{
         fontWeight:"800",
         fontSize:30,
-        color:"#514E5A",
-        marginTop:32
+        color:"#51B682",
+        marginTop:120
     },
     input:{
-        marginTop:32,
+        marginTop:10,
         height:50,
         borderWidth:StyleSheet.hairlineWidth,
-        borderColor:"#BAB7C3",
+        borderColor:"#0F1316",
         borderRadius:30,
         paddingHorizontal:16,
-        color:"#514E5A",
+        color:"#0F1316",
         fontWeight:"600"
     }
 });
