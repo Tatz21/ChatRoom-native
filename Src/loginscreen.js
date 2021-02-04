@@ -21,8 +21,7 @@ export default class loginscreen extends React.Component{
                       />
                       </View>
                       <View style={{marginHorizontal:32}}>
-                          <Text style={styles.header}>Username</Text>
-                          <TextInput style={styles.input} placeholder='Techsalicious' onChangeText={name => {this.setState({name});
+                          <TextInput style={styles.input} placeholder='Username' onChangeText={name => {this.setState({name});
                           
                         }}
                          value={this.state.name} 
@@ -48,20 +47,16 @@ const styles= StyleSheet.create({
         left:-120,
         top:-20
     },
-    header:{
-        fontWeight:"800",
-        fontSize:30,
-        color:"#51B682",
-        marginTop:120
-    },
+  
     input:{
-        marginTop:10,
+        marginTop:140,
         height:50,
         borderWidth:StyleSheet.hairlineWidth,
         borderColor:"#0F1316",
         borderRadius:30,
         paddingHorizontal:16,
-        color:"#0F1316",
+        color:"#FFFF",
         fontWeight:"600"
+        
     }
 });
