@@ -27,9 +27,9 @@ export default class loginscreen extends React.Component{
                         }}
                          value={this.state.name} 
                           />
-                          <View style={{alignItems:"flex-end",marginTop:"64" }}>
+                          <View style={{alignItems:"flex-end",marginTop: 6 }}>
                           <TouchableOpacity style={styles.continue} onPress={this.continue}>
-                              <Ionicons name="md-arrow-round-forward" size={24} color='#FFF' />
+                              <Ionicons name="arrow-forward-circle" size={40} color='black' />
                               </TouchableOpacity>    
                           </View>
                      </View>
@@ -66,5 +66,12 @@ const styles= StyleSheet.create({
         backgroundColor:'white'
         
     },
-    
+    continue:{
+        width:70,
+        height:70,
+       borderRadius:70 /2,
+       backgroundColor:'#0000',
+       alignItems:"center",
+       justifyContent:"center" 
+    }
 });
