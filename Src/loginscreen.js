@@ -52,11 +52,12 @@ const styles= StyleSheet.create({
         marginTop:140,
         height:50,
         borderWidth:StyleSheet.hairlineWidth,
-        borderColor:"#0F1316",
+        borderColor:"#FFFF",
         borderRadius:30,
         paddingHorizontal:16,
-        color:"#FFFF",
-        fontWeight:"600"
+        color:"#000",
+        fontWeight:"600",
+        backgroundColor:'white'
         
     }
 });
