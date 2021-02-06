@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text,StyleSheet } from 'react-native';
-
+import { Platform, KeyboardAvoidingView, SafeAreaView} from 'react-native';
+import {GiftedChat} from 'react-native-gifted-chat'
+import Fire from '../Api/Firebase';
 export default class chatscreen extends React.Component{
+    state = 
     render(){
         return(
                <View style={styles.container}>
@@ -12,10 +14,3 @@ export default class chatscreen extends React.Component{
     }
 }
 
-const styles= StyleSheet.create({
-    container:{
-        flex:1,
-        justifyContent:"center",
-        alignItems:"center"
-    }
-});
