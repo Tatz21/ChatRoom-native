@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text,StyleSheet,TextInput,TouchableOpacity, Image } from 'react-native';
 import{Ionicons} from '@expo/vector-icons'
-import TextField from '@material-ui/core/TextField';
+
 
 export default class loginscreen extends React.Component{
     state= {

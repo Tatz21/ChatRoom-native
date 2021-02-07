@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, KeyboardAvoidingView, SafeAreaView} from 'react-native';
-import {GiftedChat} from 'react-native-gifted-chat'
+import {GiftedChat} from 'react-native-gifted-chat';
 import Fire from '../Api/Firebase';
 export default class chatscreen extends React.Component{
     state = {
@@ -17,7 +17,7 @@ export default class chatscreen extends React.Component{
 
     componentDidMount() {
         Fire.get(message=> this.setState(previous =>({
-            messages: GiftedChat.append(previous.message, message)
+            messages: GiftedChat.append(previous.message , message)
         }))
         );
 
@@ -37,6 +37,7 @@ export default class chatscreen extends React.Component{
                 </KeyboardAvoidingView>
             );
         }
+
     return <SafeAreaView style={{ flex:1}}>{chat}</SafeAreaView>;
     }
 }
